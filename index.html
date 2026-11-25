@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Code Memo</title>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- 상단 타이틀 바 -->
+        <header class="title-bar">
+            <div class="window-buttons">
+                <span class="red"></span>
+                <span class="yellow"></span>
+                <span class="green"></span>
+            </div>
+
+            <div class="title">
+                My Code Memo - Visual Studio Code
+            </div>
+        </header>
+
+        <!-- 메뉴 바 -->
+        <nav class="menu-bar">
+            <span>File</span>
+            <span>Edit</span>
+            <span>Selection</span>
+            <span>View</span>
+            <span>Help</span>
+        </nav>
+
+        <!-- 메인 영역 -->
+        <main class="main-container">
+
+            <!-- 왼쪽 사이드바 -->
+            <aside class="sidebar">
+
+                <div class="sidebar-title">
+                    EXPLORER
+                </div>
+
+                <div class="folder">
+                    📁 MY MEMO
+                </div>
+
+                <div class="file active">
+                    📄 memo.html
+                </div>
+
+                <div class="file">
+                    📄 notes.txt
+                </div>
+
+            </aside>
+
+            <!-- 메모장 영역 -->
+            <section class="editor">
+
+                <!-- 탭 -->
+                <div class="tab-bar">
+                    <div class="tab active">
+                        📄 memo.html
+                    </div>
+                </div>
+
+                <!-- 편집 화면 -->
+                <div class="editor-content">
+
+                    <!-- 줄 번호 -->
+                    <div class="line-numbers">
+                        1<br>
+                        2<br>
+                        3<br>
+                        4<br>
+                        5<br>
+                        6<br>
+                        7<br>
+                        8<br>
+                        9<br>
+                        10<br>
+                        11<br>
+                        12<br>
+                        13<br>
+                        14<br>
+                        15<br>
+                        16<br>
+                        17<br>
+                        18<br>
+                        19<br>
+                        20<br>
+                        21
+                    </div>
+
+                    <!-- 입력 영역 -->
+                    <div class="memo-area">
+                        <textarea
+                            class="memo-input"
+                            placeholder="여기에 자유롭게 메모하세요..."
+                            spellcheck="false"
+                        ></textarea>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- 하단 상태 표시줄 -->
+        <footer class="status-bar">
+            <div>● HTML</div>
+            <div>Ln 1, Col 1 &nbsp; UTF-8</div>
+        </footer>
+
+    </div>
+
+</body>
+</html>

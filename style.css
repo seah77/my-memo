@@ -1,0 +1,214 @@
+
+/* 기본 설정 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-family: 'Consolas', 'Malgun Gothic', monospace;
+    overflow: hidden;
+}
+
+/* 전체 컨테이너 */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    color: #cccccc;
+}
+
+/* 상단 타이틀 바 */
+.title-bar {
+    height: 35px;
+    background-color: #323233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid #252526;
+}
+
+.window-buttons {
+    position: absolute;
+    left: 15px;
+    display: flex;
+    gap: 8px;
+}
+
+.window-buttons span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: #ff5f57;
+}
+
+.yellow {
+    background-color: #febc2e;
+}
+
+.green {
+    background-color: #28c840;
+}
+
+.title {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+/* 메뉴 바 */
+.menu-bar {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 15px;
+    background-color: #333333;
+    font-size: 13px;
+}
+
+.menu-bar span {
+    cursor: pointer;
+}
+
+.menu-bar span:hover {
+    color: white;
+}
+
+/* 메인 영역 */
+.main-container {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+}
+
+/* 왼쪽 사이드바 */
+.sidebar {
+    width: 220px;
+    background-color: #252526;
+    border-right: 1px solid #333333;
+    padding-top: 15px;
+    flex-shrink: 0;
+}
+
+.sidebar-title {
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 0 15px 20px;
+    color: #bbbbbb;
+}
+
+.folder {
+    padding: 8px 15px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.file {
+    padding: 8px 30px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.file:hover {
+    background-color: #2a2d2e;
+}
+
+.file.active {
+    background-color: #37373d;
+    color: white;
+}
+
+/* 편집기 영역 */
+.editor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+/* 탭 바 */
+.tab-bar {
+    height: 38px;
+    background-color: #252526;
+    display: flex;
+}
+
+.tab {
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    font-size: 13px;
+    background-color: #1e1e1e;
+    border-top: 1px solid #007acc;
+    border-right: 1px solid #333333;
+}
+
+/* 편집 화면 */
+.editor-content {
+    flex: 1;
+    display: flex;
+    min-height: 0;
+    padding-top: 15px;
+}
+
+/* 줄 번호 */
+.line-numbers {
+    width: 55px;
+    flex-shrink: 0;
+    text-align: right;
+    padding-right: 15px;
+    color: #858585;
+    font-size: 14px;
+    line-height: 24px;
+    user-select: none;
+}
+
+/* 메모 입력 영역 */
+.memo-area {
+    flex: 1;
+    min-width: 0;
+    padding-right: 20px;
+}
+
+.memo-input {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgb(255, 204, 225);
+    font-family: 'Consolas', monospace;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 0;
+    caret-color: white;
+}
+
+.memo-input::placeholder {
+    color: #666666;
+}
+
+/* 하단 상태 표시줄 */
+.status-bar {
+    height: 23px;
+    background-color: #007acc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    color: white;
+    font-size: 11px;
+}
